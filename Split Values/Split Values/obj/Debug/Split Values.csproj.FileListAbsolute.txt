@@ -1,0 +1,6 @@
+H:\Modules\Software Development 2\Split Values\Split Values\bin\Debug\Split Values.exe.config
+H:\Modules\Software Development 2\Split Values\Split Values\bin\Debug\Split Values.exe
+H:\Modules\Software Development 2\Split Values\Split Values\bin\Debug\Split Values.pdb
+H:\Modules\Software Development 2\Split Values\Split Values\obj\Debug\Split Values.csprojResolveAssemblyReference.cache
+H:\Modules\Software Development 2\Split Values\Split Values\obj\Debug\Split Values.exe
+H:\Modules\Software Development 2\Split Values\Split Values\obj\Debug\Split Values.pdb
