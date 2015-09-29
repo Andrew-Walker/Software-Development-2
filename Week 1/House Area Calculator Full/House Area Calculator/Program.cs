@@ -30,12 +30,15 @@ namespace House_Area_Calculator {
             String roomCounter = "";
 
             while (roomCounterInt == 0) {
+                //Ensures at least one room is entered.
                 roomCounter = Console.ReadLine();
                 roomCounterInt = ValidateValue(roomCounter);
             }
 
             for (int i = 1; i < roomCounterInt + 1; i++) {
+                // ****************
                 // ROOM DESCRIPTION
+                // ****************
 
                 String roomDescription = "";
                 while (roomDescription.Length < 1) {
@@ -43,7 +46,9 @@ namespace House_Area_Calculator {
                     roomDescription = Console.ReadLine();
                 }
 
+                // ****************
                 // ROOM WIDTH
+                // ****************
 
                 Console.Write("Enter the width of room '" + roomDescription + "': ");
 
@@ -55,7 +60,9 @@ namespace House_Area_Calculator {
                     roomWidthInt = ValidateValue(roomWidth);
                 }
 
+                // ****************
                 // ROOM LENGTH
+                // ****************
 
                 Console.Write("Enter the length of room '" + roomDescription + "': ");
 
@@ -75,6 +82,7 @@ namespace House_Area_Calculator {
             Console.WriteLine("{0,-20} {1,20}", "Room", "(sq ms)");
 
             for (int i = 0; i < nameList.Count; i++) {
+                //Print individual room totals and calculates overall total.
                 Console.WriteLine("{0,-20} {1,20}", nameList[i], widthList[i] * lengthList[i]);
 
                 totalCount += widthList[i] * lengthList[i];

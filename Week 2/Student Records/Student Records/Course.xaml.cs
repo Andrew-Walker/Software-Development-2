@@ -17,6 +17,11 @@ namespace Student_Records {
     /// Interaction logic for Course.xaml
     /// </summary>
     public partial class Course : Window {
+        public string PublicCourse {
+            get { return courseSelected; }
+        }
+
+        String courseSelected = "";
         public Course() {
             InitializeComponent();
         }
@@ -26,7 +31,7 @@ namespace Student_Records {
         }
 
         private void courseComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e) {
-
+            //courseSelected = 
         }
 
         private void courseComboBox_Loaded(object sender, RoutedEventArgs e) {

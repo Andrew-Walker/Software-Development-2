@@ -18,20 +18,33 @@ namespace Student_Records {
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
+        Address addressWindow = new Address();
+        Course courseWindow = new Course();
+
         public MainWindow() {
             InitializeComponent();
         }
 
         private void courseButton_Click(object sender, RoutedEventArgs e) {
             //Create and show instance of course window
-            Course courseWindow = new Course();
             courseWindow.Show();
+            addressWindow.Owner = this;
+            courseWindow.Closing += new System.ComponentModel.CancelEventHandler(courseWindow_Closing);
         }
 
         private void addressButton_Click(object sender, RoutedEventArgs e) {
             //Create and show instance of address window
-            Address addressWindow = new Address();
-            addressWindow.ShowDialog();
+            addressWindow.Show();
+            addressWindow.Owner = this;
+            addressWindow.Closing += new System.ComponentModel.CancelEventHandler(addressWindow_Closing);
+        }
+
+        void courseWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e) {
+            courseLabel.Content = courseWindow.PublicCourse;
+        }
+
+        void addressWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e) {
+            addressLabel.Content = addressWindow.PublicAddress;
         }
 
         private void saveButton_Click(object sender, RoutedEventArgs e) {

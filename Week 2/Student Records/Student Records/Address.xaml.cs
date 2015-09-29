@@ -17,11 +17,18 @@ namespace Student_Records {
     /// Interaction logic for Address.xaml
     /// </summary>
     public partial class Address : Window {
+        public string PublicAddress {
+            get { return fullAddress; }
+        }
+
+        String fullAddress = "";
         public Address() {
             InitializeComponent();
         }
 
         private void okButton_Click(object sender, RoutedEventArgs e) {
+            fullAddress = numberTextBox.Text + ", " + streetTextBox.Text + ", " + cityTextBox.Text + ", " + postcodeTextBox.Text + ", " + countryTextBox.Text;
+
             this.Close();
         }
     }

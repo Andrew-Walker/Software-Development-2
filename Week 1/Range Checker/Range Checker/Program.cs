@@ -23,22 +23,26 @@ namespace Range_Checker {
             Console.Write("Enter a value between 1 and 10,000: ");
 
             while (numberEnteredInt < 1 || numberEnteredInt > 10000) {
+                //Ensures value is within range
                 numberEntered = Console.ReadLine();
                 numberEnteredInt = ValidateValue(numberEntered);
             }
 
-            for (int x = 2; x < numberEnteredInt; x++)
-            {
+            for (int x = 2; x < numberEnteredInt; x++) {
+                //Loops until all numbers have been checked.
                 int isPrime = 0;
-                for (int y = 1; y < x; y++)
-                {
-                    if (x % y == 0)
+                for (int y = 1; y < x; y++) {
+                    if (x % y == 0) {
                         isPrime++;
+                    }
 
-                    if (isPrime == 2) break;
+                    if (isPrime == 2) {
+                        break;
+                    }
                 }
-                if (isPrime != 2)
+                if (isPrime != 2) {
                     Console.WriteLine(x);
+                }
 
                 isPrime = 0;
             }
