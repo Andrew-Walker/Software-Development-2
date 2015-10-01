@@ -31,7 +31,9 @@ namespace Student_Records {
         }
 
         private void courseComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e) {
-            //courseSelected = 
+            var comboBox = sender as ComboBox;
+
+            courseSelected = comboBox.SelectedItem as string;
         }
 
         private void courseComboBox_Loaded(object sender, RoutedEventArgs e) {

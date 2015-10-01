@@ -29,7 +29,7 @@ namespace Student_Records {
         private void okButton_Click(object sender, RoutedEventArgs e) {
             fullAddress = numberTextBox.Text + ", " + streetTextBox.Text + ", " + cityTextBox.Text + ", " + postcodeTextBox.Text + ", " + countryTextBox.Text;
 
-            this.Close();
+            this.Hide();
         }
     }
 }
