@@ -9,9 +9,10 @@ namespace Classes10
 	public class PaintShop
 	{
 		public ArrayList colourList = new ArrayList();
-		public PaintShop()
-		{
-			
+		public PaintShop() {
+			public void display() {
+                Console.WriteLine(colourList);
+            }
 		}
 		// add a display method that displays all the colours
 		// in a PaintShop

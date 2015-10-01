@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 
 namespace Classes8
 {
@@ -7,22 +8,33 @@ namespace Classes8
 	/// </summary>
 	class Class8
 	{
+        static void printContents(ArrayList names)
+        {
+            foreach (string name in names)
+            {
+                System.Console.WriteLine("{0}", name);
+            }
+        }
 		/// <summary>
 		/// The main entry point for the application.
 		/// </summary>
 		[STAThread]
 		static void Main(string[] args)
 		{
-//			ArrayList a = new ArrayList();
-//			a.Add("Arnold");	
-//			a.Add("Smith");
-//			a.Add("Cordiner");	
-//			a.Add("Mitchel");
+			ArrayList a = new ArrayList();
+			a.Add("Arnold");	
+			a.Add("Smith");
+			a.Add("Cordiner");	
+			a.Add("Mitchel");
+
+            a.Sort();
 			
-//			foreach (string name in a)
-//			{
-//				System.Console.WriteLine("{0}",name);
-//			}
+			foreach (string name in a)
+			{
+				System.Console.WriteLine("{0}",name);
+			}
+
+            printContents(a);
 
 		// *********** UN-COMMENT THE ABOVE CODE ************
 			
