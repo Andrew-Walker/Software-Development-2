@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student Record System", "Student Record System\Student Record System.csproj", "{596BE541-AC2D-45F0-8289-61948C3E7D3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{596BE541-AC2D-45F0-8289-61948C3E7D3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{596BE541-AC2D-45F0-8289-61948C3E7D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{596BE541-AC2D-45F0-8289-61948C3E7D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{596BE541-AC2D-45F0-8289-61948C3E7D3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
